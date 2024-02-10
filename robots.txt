@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /css/
+Disallow: /favicon/
+Disallow: /images/
+Disallow: /js/
+Disallow: /libs/
+Disallow: /phpmailer/
+Disallow: /phpmailer/
+Disallow: /mail.php
+Disallow: /priv-policy.html
+Disallow: /README.md
+Allow: /
+Sitemap: https://7studio.com.ua/sitemap.xml
