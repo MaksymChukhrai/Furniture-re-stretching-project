@@ -42,7 +42,11 @@ try {
   $mail->setFrom('gateway.2024@ukr.net', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
+<<<<<<< HEAD
  $mail->addAddress('bert137q@gmail.com');
+=======
+  $mail->addAddress('bert137q@gmail.com');
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
   $mail->addAddress('m.chukhrai@gmail.com');
  
 
@@ -53,9 +57,15 @@ try {
       $filename = $file['name'][$ct];
       if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
           $mail->addAttachment($uploadfile, $filename);
+<<<<<<< HEAD
           $rfile[] = "Файл $filename прикріплено";
       } else {
           $rfile[] = "Не вдалося прікрипити файл $filename";
+=======
+          $rfile[] = "Файл $filename прикреплён";
+      } else {
+          $rfile[] = "Не удалось прикрепить файл $filename";
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
       }
     }
   }
@@ -68,5 +78,9 @@ try {
   $mail->send();
 
 } catch (Exception $e) {
+<<<<<<< HEAD
   $status = "Повідомлення не було відправлено. Причина помилки: {$mail->ErrorInfo}";
+=======
+  $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 }

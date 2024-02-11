@@ -1,7 +1,11 @@
 :root{
     --primary-white-color: #ffffff;
     --test-background-color: rgba(0, 0, 4);
+<<<<<<< HEAD
 --accent-blue-color:#007bff;
+=======
+
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 }
 body{
     background-color:var(--test-background-color);
@@ -47,6 +51,7 @@ body{
     padding: 15px;
     z-index: 2;
 }
+<<<<<<< HEAD
 .lang{
     display: flex;
     gap: 15px;
@@ -73,6 +78,8 @@ cursor: pointer;
 .project-link:active {
     color: var(--primary-white-color);
 }
+=======
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 
 .about-title{
     text-align: center;
@@ -82,7 +89,11 @@ cursor: pointer;
 .myphoto {
     width: 200px; /* Задайте ширину и высоту контейнера */
     height: 200px;
+<<<<<<< HEAD
     border-radius: 50%; /* Сделайте круглый контейнер с помощью border-radius */
+=======
+    border-radius: 60%; /* Сделайте круглый контейнер с помощью border-radius */
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
     overflow: hidden; /* Обрежьте фотографию по границам контейнера */
 margin:0 auto;
 margin-bottom:20px;
@@ -91,10 +102,17 @@ margin-bottom:20px;
 
 .myphoto img {
     width: 100%; /* Заполните 100% ширины контейнера */
+<<<<<<< HEAD
     height: 100%; /* Поддерживайте пропорции изображения */
     display: block; /* Уберите лишние промежутки отображения в строке */
     object-fit: cover; /* Сохраните пропорции и обрежьте изображение, чтобы оно полностью заполняло контейнер */
     object-position: 50% 50%; /* Сместите видимую часть изображения вправо на 20% и по вертикали по центру (настройте значения в соответствии с вашими потребностями) */
+=======
+    height: auto; /* Поддерживайте пропорции изображения */
+    display: block; /* Уберите лишние промежутки отображения в строке */
+    object-fit: cover; /* Сохраните пропорции и обрежьте изображение, чтобы оно полностью заполняло контейнер */
+    object-position: 20% 70%; /* Сместите видимую часть изображения вправо на 20% и по вертикали по центру (настройте значения в соответствии с вашими потребностями) */
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 }
 .aboutme{
     font-weight: 400;
@@ -154,6 +172,7 @@ h2{
 .social-icon-3:hover,
 .social-icon-3:focus{
     fill:#0077B5;
+<<<<<<< HEAD
 }
 @media screen and (min-width: 768px) {
     .main-container {
@@ -223,4 +242,6 @@ h2{
     padding-bottom: 0;
 }
 
+=======
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 }

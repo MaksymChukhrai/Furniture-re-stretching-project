@@ -9,5 +9,9 @@ Disallow: /phpmailer/
 Disallow: /mail.php
 Disallow: /priv-policy.html
 Disallow: /README.md
+<<<<<<< HEAD
 Allow: /
 Sitemap: https://7studio.com.ua/sitemap.xml
+=======
+
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8

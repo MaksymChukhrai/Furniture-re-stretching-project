@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+<<<<<<< HEAD
         <loc>https://7studio.com.ua</loc>
     </url>
     <url>
+=======
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
         <loc>https://7studio.com.ua/aboutus.html</loc>
     </url>
     <url>
@@ -15,7 +18,10 @@
     <url>
         <loc>https://7studio.com.ua/services.html</loc>
     </url>
+<<<<<<< HEAD
     <url>
         <loc>https://7studio.com.ua/about-me/index.html</loc>
     </url>
+=======
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 </urlset>

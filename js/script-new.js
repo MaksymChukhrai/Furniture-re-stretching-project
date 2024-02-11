@@ -43,10 +43,13 @@ validation
   ]).onSuccess((event) => {
     console.log('Validation passes and form submitted', event);
 
+<<<<<<< HEAD
     previewFiles(); // Отображаем превью загруженных файлов
         // Показываем изображение загрузки и бекдроп
         showLoadingImage();
 
+=======
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
     let formData = new FormData(event.target);
 
     console.log('Form data:', formData);
@@ -58,6 +61,7 @@ validation
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
+<<<<<<< HEAD
            if (xhr.status === 200) {
           console.log('Відправлено');
                            // Выключаем спиннер и фоновое затемнение перед alert
@@ -76,6 +80,12 @@ validation
          
         }
       
+=======
+        if (xhr.status === 200) {
+          console.log('Відправлено');
+          // здесь можно добавить alert окно
+        }
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
       }
     }
 
@@ -83,6 +93,7 @@ validation
     xhr.send(formData);
 
     event.target.reset();
+<<<<<<< HEAD
   });
   // Функция для отображения изображения загрузки и фонового затемнения (backdrop)
   function showLoadingImage() {
@@ -152,3 +163,6 @@ validation
    }
  }
  
+=======
+  });
+>>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
