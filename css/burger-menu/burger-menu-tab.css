@@ -226,7 +226,6 @@ img {
     max-height: 80vh;
     padding-bottom: 20px;
   }
-<<<<<<< HEAD
   .loading-image{
     position: fixed;
     top: 20%;
@@ -234,8 +233,6 @@ img {
     transform: translate(50%, 50%);
     z-index: 1000; /* Поверх backdrop */
   }
-=======
->>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 
   /* --------Про нас------- */
   .aboutus-text {

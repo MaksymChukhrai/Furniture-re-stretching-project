@@ -550,11 +550,7 @@ margin-bottom: 20px;
     left: 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.5);
-=======
-    background-color: rgba(0, 0, 0, 0.8);
->>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
     opacity: 1;
     box-shadow: var(--card-shadow);
     transition: opacity var(--transition-speed);
@@ -714,11 +710,7 @@ margin-bottom: 20px;
   }
   
   .agree {
-<<<<<<< HEAD
     margin-left: 25px;
-=======
-    margin-left: 10px;
->>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
     letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 12px;
@@ -823,7 +815,6 @@ margin-bottom: 20px;
     margin-bottom: 20px;
   }
 
-<<<<<<< HEAD
   
 /* .form-label-order{
   display: inline-block;
@@ -835,11 +826,6 @@ margin-bottom: 20px;
 color:var(--primary-white-color);
 text-align: left;
 
-=======
-.form-label>p{
-color:var(--primary-white-color);
-text-align: left;
->>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 }
 .upload-block:hover,
 .upload-block:focus{
@@ -874,11 +860,8 @@ align-items: center;
 color:var(--primary-white-color);
 font-weight: 300;
 font-size: 18px;
-<<<<<<< HEAD
 padding-right:10px;
 text-align: justify;
-=======
->>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 }
 
 .form-input-order {
@@ -897,7 +880,6 @@ outline: 1px solid var(--accent-color);
 .btn-submit.servorder {
 margin-top: 30px;
 }
-<<<<<<< HEAD
 /* новое добавить---------------- */
 .file_preview{
   display:flex;
@@ -924,8 +906,6 @@ margin-top: 30px;
   color:var(--primary-button-color);
 }
 /* новое добавить---------------- */
-=======
->>>>>>> 188e55c13661ab4b1ccff982daa1d861c20131d8
 
 .service{
 display: none;
