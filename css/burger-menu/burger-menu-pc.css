@@ -239,6 +239,9 @@ img {
   .author {
     padding-right: 30px;
   }
+  .author.servises {
+    padding-right: 80px; /* Дополнительный padding только для элементов с классами author и servises */
+}
   /* -----------Services-------Послуги--- */
   .service-list {
     max-width: 1440px;

@@ -34,7 +34,7 @@ try {
  // Настройки моей почты
  $mail->Host       = 'smtp.ukr.net'; // SMTP сервера моей почты
  $mail->Username   = 'gateway.2024@ukr.net'; // Логин на почте
- $mail->Password   = 'aHjsIzfuYslPU1aa'; // Пароль на почте
+ $mail->Password   = '9kTXNbE01RHVXR9v'; // Пароль на почте
  $mail->SMTPSecure = 'ssl';
  $mail->Port       = 465;
 
@@ -43,7 +43,7 @@ try {
 
   // Получатель письма
  $mail->addAddress('bert137q@gmail.com');
-  $mail->addAddress('m.chukhrai@gmail.com');
+  $mail->addAddress('gateway.2024@ukr.net');
  
 
   // Прикрипление файлов к письму

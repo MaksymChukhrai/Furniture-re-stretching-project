@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TS6H5WEEYX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TS6H5WEEYX");
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -380,22 +395,21 @@
               ></textarea>
             </label>
 
-            <label class="form-label-order"  onclick="document.querySelector('input[name=file]').click();">
+            <label
+              class="form-label-order"
+              onclick="document.querySelector('input[name=file]').click();"
+            >
               <input
-              type="file"
-              name="file[]"
-              multiple
-              id="myfile"
-              accept=".jpg, .png, .gif"
-              class="form-input form-input-order"
-              onchange="previewFiles()"
+                type="file"
+                name="file[]"
+                multiple
+                id="myfile"
+                accept=".jpg, .png, .gif"
+                class="form-input form-input-order"
+                onchange="previewFiles()"
               />
               <div class="upload-block">
-                <button 
-                  class="btn-upload-order"
-                  type="button"
-                 
-                >
+                <button class="btn-upload-order" type="button">
                   <img
                     src="./images/glass icon.100x100.png"
                     alt="Upload Icon"
@@ -403,13 +417,13 @@
                     height="80"
                   />
                 </button>
-                <p>завантажити фото  <span id="pfotolimit">до 5 mb</span></p>
+                <p>завантажити фото <span id="pfotolimit">до 5 mb</span></p>
               </div>
-                            <!-- новое добавить -->
+              <!-- новое добавить -->
               <div class="file_preview">
-               <img class="preview-image" />
+                <img class="preview-image" />
               </div>
-                                <!-- новое добавить -->
+              <!-- новое добавить -->
             </label>
             <button class="btn-submit servorder" type="submit">
               Відправити
@@ -502,7 +516,15 @@
         </ul>
       </div>
 
-      <div class="author"><a href="/about-me/index-ukr.html">Created by Maksym Chukhrai</a></div>
+      <div class="author">
+        <a
+          href="https://www.mchukhrai.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Visit Maksym Chukhrai's website"
+          >Created by Maksym Chukhrai</a
+        >
+      </div>
     </footer>
 
     <!-- Script for modal window -->

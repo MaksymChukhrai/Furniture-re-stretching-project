@@ -16,9 +16,9 @@
     margin: 0 auto;
 }
 
-.player-radio-link{
+.player-radio-container{
     margin-top: 20px;
-    min-width:100px;
+    /* min-width:100px; */
 
   }
 
@@ -53,17 +53,23 @@ h2 {
 }
 
 .author{
+    background-color: #045c5adb;
+ 
     text-align:center;
    padding-bottom:5px;
-    max-width: 1400px;
+    max-width: 1440px;
     margin:0 auto;
   }
   .author>a{
-    color:var(--primary-button-color);
+    color:#FFC107;
+    font-family: Roboto, sans-serif, Raleway;
+text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
   }
   .author>a:hover{
     cursor: pointer;
-    color: var(--primary-white-color);
+    color:  #ffffff;
   }
 
 @media (min-width: 768px) {
@@ -95,4 +101,313 @@ h2 {
     ol {
         padding-left: 30px;
         }
+}
+/* ============================================
+   RADIO WIDGET STYLES - RESET & BASE
+   ============================================ */
+
+/* Widget container */
+.mytuner-widget {
+  all: initial;
+  display: block;
+  color: #3d3d3d;
+  width: 100%;
+  max-width: 350px;
+  /* margin: 0 auto; */
+  overflow: hidden;
+  max-height: 500px;
+  border: 1px solid rgb(129, 127, 128);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.mytuner-widget,
+.mytuner-widget * {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ============================================
+   TOP BAR SECTION
+   ============================================ */
+
+.mytuner-widget .widget-top-bar {
+  background: rgb(249, 240, 240);
+  height: 75px;
+  width: 100%;
+  display: block;
+  padding: 5px;
+  line-height: 65px;
+  position: relative;
+}
+
+/* ============================================
+   MAIN PLAY BUTTON
+   ============================================ */
+
+.mytuner-widget .main-play-button {
+  padding: 5px;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 15px;
+  margin-top: 12.5px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 1px 2px 6px -3px black;
+  transition: all 0.3s ease;
+}
+
+.mytuner-widget .main-play-button:hover {
+  background-color: #eee;
+}
+
+.mytuner-widget .main-play-button.disabled {
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+.mytuner-widget .main-play-button .play-image {
+  background: url("https://mytuner-radio.com/static/icons/widgets/BT_Play/BT_Play@2x.png") no-repeat center;
+  background-size: 16px;
+  width: 28px;
+  height: 28px;
+  margin-left: 3px;
+}
+
+.mytuner-widget .main-play-button.loading .play-image {
+  background: url("https://static2.mytuner.mobi/static/images/sprite-loading.gif") no-repeat center;
+  filter: grayscale(1);
+  background-size: 28px;
+  margin-left: 2px;
+}
+
+.mytuner-widget .main-play-button.playing .play-image {
+  background: url("https://mytuner-radio.com/static/icons/widgets/BT_Pause/BT_Pause@2x.png") no-repeat center;
+  background-size: 16px;
+  margin-left: 2px;
+}
+
+.mytuner-widget .main-play-button.error .play-image {
+  background: url("https://mytuner-radio.com/static/icons/widgets/BT_Error/erro@2x.png") no-repeat center;
+  background-size: 16px;
+  margin-left: 0;
+}
+
+/* ============================================
+   ALTERNATIVE PLAY BUTTON
+   ============================================ */
+
+.mytuner-widget .play-button {
+  background: url("https://mytuner-radio.com/static/icons/widgets/BT_Play/BT_Play.png") no-repeat center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin: auto 4px auto 19px;
+}
+
+.mytuner-widget .play-button.loading {
+  background: url("https://static2.mytuner.mobi/static/images/sprite-loading.gif") no-repeat center;
+  filter: grayscale(1);
+  background-size: 28px;
+}
+
+.mytuner-widget .play-button.playing {
+  background: url("https://mytuner-radio.com/static/icons/widgets/BT_Pause/BT_Pause.png") no-repeat center;
+}
+
+.mytuner-widget .play-button.error {
+  background: url("https://mytuner-radio.com/static/icons/widgets/BT_Error/erro.png") no-repeat center;
+  background-size: 15px;
+}
+
+.mytuner-widget .play-button.disabled {
+  opacity: 0.3;
+}
+
+.mytuner-widget .play-button.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* ============================================
+   PLAYER RADIO LINK
+   ============================================ */
+
+.mytuner-widget .player-radio-link {
+display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ============================================
+   RADIO LOGO
+   ============================================ */
+
+.mytuner-widget .radio-logo {
+  float: left;
+  height: 74px;
+  margin-top: -5px;
+  box-shadow: black 0px 0px 3px -1px;
+}
+
+/* ============================================
+   RADIO NAME
+   ============================================ */
+
+.mytuner-widget .player-radio-name {
+  width: calc(100% - 74px - 10px);
+  margin-left: 10px;
+  color: rgb(61, 61, 61);
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============================================
+   VOLUME CONTROLS
+   ============================================ */
+
+.mytuner-widget input[type="range"][orient="vertical"] {
+  writing-mode: bt-lr; /* IE */
+  -webkit-appearance: slider-vertical; /* WebKit */
+  -moz-appearance: slider-vertical; /* Firefox */
+  appearance: slider-vertical; /* Standard */
+  width: 8px;
+  padding: 0 5px;
+}
+
+.mytuner-widget .volume-controls {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 14px;
+  padding-top: 0;
+  border-radius: 20px;
+  box-sizing: content-box;
+  z-index: 10;
+  border: 1px solid transparent;
+  transition: background 0.5s, padding 0.5s, margin 0.5s, border 0.5s;
+  overflow: hidden;
+}
+
+.mytuner-widget .volume-controls:hover {
+  padding-top: 140px;
+  margin-top: -126px;
+  background-color: #f2f2f2;
+  border: 1px solid grey;
+  transition: background 0.5s, padding 0.5s, margin 0.5s;
+}
+
+.mytuner-widget .volume-controls:hover > .volume-control {
+  display: block;
+}
+
+.mytuner-widget .volume-controls .volume-control {
+  opacity: 0;
+  margin-top: -126px;
+  margin-left: 13px;
+  position: absolute;
+  transition: 0.5s all;
+}
+
+.mytuner-widget .volume-controls:hover .volume-control {
+  opacity: 1;
+}
+
+.mytuner-widget .volume-controls .volume-indicator {
+  cursor: pointer;
+  display: block;
+  fill: grey;
+  margin: 2px;
+}
+
+/* ============================================
+   MYTUNER LOGO
+   ============================================ */
+
+.mytuner-widget .player-mytuner-logo {
+  margin-left: 47px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mytuner-widget .mytuner-logo-img {
+  height: 36px;
+  width: 84px;
+  vertical-align: middle;
+}
+
+/* ============================================
+   SONG HISTORY LIST
+   ============================================ */
+
+.mytuner-widget .song-history {
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  max-height: calc(415px);
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  list-style: none;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+@media (max-width: 480px) {
+  .mytuner-widget .player-radio-link {
+    width: calc(100% - 65px - 84px - 12px);
+  }
+
+  .mytuner-widget .player-mytuner-logo {
+    margin-left: 10px;
+  }
+
+  .mytuner-widget .volume-controls {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .mytuner-widget .volume-controls {
+    display: none;
+  }
+}
+
+/* ============================================
+   CUSTOM OVERRIDES
+   ============================================ */
+
+/* Скрыть логотип MyTuner */
+.mytuner-widget .player-mytuner-logo {
+  display: none;
+}
+
+/* Ограничить ширину виджета */
+.mytuner-widget {
+  max-width: 350px;
+  /* margin: 0 auto; */
+}
+
+/* Адаптация названия радио */
+.mytuner-widget .player-radio-name {
+  font-size: 15px;
+  line-height: 1.2;
+  white-space: normal;
+  display: inline-block;
+}
+
+/* Скрыть флаг страны */
+.mytuner-widget .widget-top-bar > a.player-radio-link > span > span:nth-child(3) {
+  display: none;
 }
